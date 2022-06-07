@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fantasy</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+   <!-- <link rel="stylesheet" href="../static/css/style3.css"/> -->
+    <link rel="stylesheet" href="../static/css/fantasy_style.css"/>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- The header starts here -->
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
+                <a class="navbar-brand h1 goofy_blue" href="/">
+                    <h1>Cads Kiper</h1>
+                    <i class="fas fa-home"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="form-inline">
+                    <div class="collapse navbar-collapse ul_format" id="navbarNavDropdown">
+                        <ul class="navbar-nav ">
+                          <div class="collapse navbar-collapse ul_format" id="navbarNavDropdown">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Articles
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <!-- <a class="dropdown-item" href="/intro">
+                                      League History - Playoff Finishes <br>
+                                      and Stats
+                                  </a> -->
+                                    <a class="dropdown-item">
+                                    <!-- <a class="dropdown-item" href="/franchise">                                       -->
+                                      Cads Kiper Franchise Rankings
+                                    </a>
+                                    <a class="dropdown-item">
+                                    <!-- <a class="dropdown-item" href="/mock1">  -->
+                                      Mock 1.0
+                                    </a>
+                                    <!-- <a class="dropdown-item" >
+                                      <a class="dropdown-item" href="/2015"> 
+                                      QB Roundup
+                                    </a> -->
+                                    <a class="dropdown-item">
+                                      <!-- <a class="dropdown-item" href="/mock2">  -->
+                                      Mock draft 2.0
+                                    </a>
+                                  </div>
+                                </li>
+                              </ul>
+                              <!--<div class="collapse navbar-collapse ul_format" id="navbarNavDropdown">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        History
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="/predraft" >
+                                        Culumative Results
+                                        </a>
+                                        <a class="dropdown-item" href="/postdraft" >
+                                        Defining the "Modern Era"
+                                        </a>
+                                        <a class="dropdown-item" href="/week3">
+                                 
+                                        </a>
+                                        <a class="dropdown-item" href="/week6">
+                                      
+                                        </a>
+                                        <a class="dropdown-item" href="/week9">
+                           
+                                        </a>
+                                        <a class="dropdown-item" href="/playoffs"> 
+                                        </a>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div> -->
+                                  <div class="collapse navbar-collapse ul_format" id="navbarNavDropdown">
+                                    <ul class="navbar-nav ">
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Power Rankings
+                                          </a>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="/predraft" >
+                                            Pre Draft 
+                                            </a>
+                                            <a class="dropdown-item" href="/postdraft" >
+                                            Post Draft 
+                                            </a>
+                                            <a class="dropdown-item" href="/week3">
+                                            Week 3
+                                            </a>
+                                            <a class="dropdown-item" href="/week6">
+                                            Week 6
+                                            </a>
+                                            <a class="dropdown-item" href="/week9">
+                                            Week 9
+                                            </a>
+                                            <a class="dropdown-item" href="/postseason"> 
+                                            Playoffs
+                                            </a>
+                                          </div>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!-- One drop down-->
+                                <div class="collapse navbar-collapse ul_format" id="navbarNavDropdown">
+                                  <ul class="navbar-nav ">
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Misc.
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <a class="dropdown-item" href='https://twitter.com/CadsKiper' target="_blank">
+                                          Twitter
+                                          </a>
+                                          <!-- <a class="dropdown-item" href='/content'>
+                                            Content
+                                          </a> -->
+                                        </div>
+                                      </li>
+                                   </ul>
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                        </ul>
+                    </div>
+                </form>
+            </nav>
+        </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-1">
+        <!--Margin-->
+        </div>
+      <div class="col-10">
+        <br>
+        <br> 
+        <p>
+          <div>
+            <h2 class="text-center">
+              Franchise Power Rankings
+            </h2>
+          </div>
+        </p>
+        <hr>
+        <br>
+        <div id=main_container >
+        <table class="table table-striped table-dark">
+          <thead class="table table-striped table-dark">
+          <tr>
+            <th scope="row">Rank</th>
+            <th scope="row">Team</th>
+       
+            <th scope="row">Comments</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Cole</td>
+       
+              <td> This one was the easiest. Cole is the only member with 2 championships. Over the years, he has
+                been a little boom or bust-  either a getting playoff bye or missing them completely. However the rings speak for themselves.
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Dooley</td>
+     
+              <td> Outside of Cole, Dooley is the only member have a ring and appear in multiple finals. Dooley's down years have been especially bad, but his postseason
+                success has more than matched up than most others and was one week away from being on the same level as Cole. </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Tony Plush</td>
+        
+              <td>Tony Plush has a championship (albiet a long time ago). He's also a  mainstay in the playoffs
+              only missing it once in the 7 years of the league. The only two players more consistent than him are Falco and David Ball's but neither have a ring.
+             </td>
+            </tr>
+            <th scope="row">4</th>
+              <td>David's Balls</td>
+          
+              <td>While Nat doesn't have a ring, he's had a first round bye in every
+                year of his short career in Milton fantasy, including a trip to the finals. It's hard to rank him any higher
+              because he doesn't have a ring yet; however he's been nothing short of a force over his short tenure in the league.
+              The criteria of the franchise power rankings tend to hurt newer teams, but it is impressive he already this
+              high in the franchise power rankings.
+               </td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Matty Ice</td>
+        
+              <td>Matty Ice has been mediocre for the majority of his career. Over the last 4 years he's made the playoffs
+                dispite being sub .500 and was able to turn one of those playoff berths into a championship. Matty Ice has failed to
+                produce any powerhouse teams over the years- just a bunch of medicore teams and one happened to get hot at 
+                right time. 
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td> Falcon </td>
+         
+              <td> Falcone has been the most consistent manager with multiple trips to the finals.
+                The major blemish on his resume is the lack of a championship. A championship would vault him
+                up in the franchise power rankings, due to then fact he's always in contention. He will get a bump in the preseason power rankings most likely,
+              but his lack of a ring will anchor him lower in the franchise power rankings.</td>
+            <tr>
+              <th scope="row">7</th>
+              <td>Bucci</td>
+            
+              <td>Once upon a time, Bucci was a powerhouse, with a championship and then a first round bye
+                the next year. Since then, a once proud program has been lacking. He does though, have a championship which is more than some other managers can say.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>David</td>
+              <td>David had a hot start to his time in the league, with a playoff appearance in his rookie year. 
+                Since then, however, he has failed to recapture that first year magic.
+              </td>
+            </tr>
+            <tr>
+             <th scope="row">9</th>
+              <td>SZN</td>
+              <td> WHile SZN showed promise last year, he only has one playoff win to show for in 4 years. He's the 
+                only member of the league to have never appeared in the finals.    </td>
+            </tr>
+            <tr>
+             <th scope="row">10</th>
+             <td>Stocktown</td>
+             <td> Stocktown's championship year is tainted with ~alleged~ collusion. Outside of that
+              Stocktown doesn't have a playoff win.
+             </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      <div class="col-1">
+        <!--Margin--> 
+      </div>
+     </div> 
+  </div>
+</body>
+    <footer class="footer">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--<script type="text/javascript" src="../static/js/csco_edu.js"></script>-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

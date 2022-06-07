@@ -1,0 +1,21 @@
+#ownername{
+    font-size: 20px;
+}
+
+#page_footer {
+    text-align: middle;
+}
+
+#footer_{
+    font-size: 20px;
+    text-align: middle;
+  }
+
+#main_container{
+    background: white;
+    box-shadow: 0 0 30px black;
+  }
+
+#title{
+  text-align: middle;
+}
