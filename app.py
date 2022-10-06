@@ -25,20 +25,16 @@ def postdraft():
 
     return render_template("postdraft.html")
 
-@app.route("/week3") 
-def week3():
+@app.route("/week4") 
+def week4():
 
-    return render_template("week3.html")
+    return render_template("week4.html")
 
-@app.route("/week6") 
-def week6():
+@app.route("/week8") 
+def week8():
 
-    return render_template("week6.html")
+    return render_template("week8.html")
 
-@app.route("/week9") 
-def week9():
-
-    return render_template("week9.html")
 
 @app.route("/postseason") 
 def postseason():
