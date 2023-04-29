@@ -4,7 +4,7 @@ Flask==2.0.1
 Flask-SQLAlchemy==2.5.1
 greenlet==0.4.15
 grpcio==1.16.1
-importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1602276842396/work
+importlib-metadata==4.6.4
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
